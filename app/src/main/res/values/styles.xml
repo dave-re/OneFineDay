@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/HappyDayTheme.ActionBar</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:actionMenuTextAppearance">@style/HappyDayMenuTextAppearance</item>
+    </style>
+
+    <style name="HappyDayTheme.ActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@color/actionbar_background</item>
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:titleTextStyle">@style/HappyDayTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="HappyDayMainViewTheme" parent="AppTheme">
+        <!--<item name="android:windowActionBarOverlay">true</item>-->
+        <!--<item name="android:actionBarStyle">@style/HappyDayTheme.MainViewActionBar</item>-->
+    </style>
+
+    <style name="HappyDayTheme.MainViewActionBar" parent="HappyDayTheme.ActionBar">
+        <item name="android:alpha">0.7</item>
+    </style>
+
+    <style name="HappyDayTheme.ActionBar.TitleTextStyle" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="HappyDayMenuTextAppearance" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+</resources>

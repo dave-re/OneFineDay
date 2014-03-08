@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/write_fragment"
+    tools:context=".WriteActivity$PlaceholderFragment">
+
+    <EditText
+        android:id="@+id/diary_edit_text"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:hint="@string/enter_diary"
+        android:gravity="top" />
+
+</RelativeLayout>

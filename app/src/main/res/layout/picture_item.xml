@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    android:paddingBottom="4dp">
+
+    <FrameLayout android:id="@+id/picture_area"
+        android:background="@color/app_background"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <ImageView
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/loading"
+            />
+
+        <ImageView android:id="@+id/picture"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageView android:id="@+id/video_icon"
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_movie"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+
+    <TextView android:id="@+id/time_text"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/picture_area"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/date_text"
+        android:textSize="12sp"
+        android:layout_margin="4dp"
+        />
+
+</RelativeLayout>

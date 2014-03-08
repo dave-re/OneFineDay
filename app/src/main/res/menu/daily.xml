@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DailyActivity" >
+
+    <item android:id="@+id/action_sticker"
+        android:title="@string/action_sticker"
+        android:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_edit"
+        android:title="@string/action_edit"
+        android:showAsAction="ifRoom"/>
+
+
+</menu>

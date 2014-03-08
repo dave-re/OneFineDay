@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/layout_bg">
+
+    <FrameLayout android:background="@color/app_background"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/loading"
+            />
+
+        <ImageView android:id="@+id/picture"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageView android:id="@+id/video_icon"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_movie"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="-3dp"
+            >
+
+            <ImageView android:id="@+id/sticker_thumb"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:layout_alignParentRight="true"
+                />
+
+            <TextView android:id="@+id/day_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="42sp"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/sticker_thumb"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView android:id="@+id/month_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_toLeftOf="@id/day_text"
+                android:layout_alignBaseline="@id/day_text"
+                android:textColor="@android:color/white"
+                />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp">
+
+        <TextView android:id="@+id/dairy_text"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/dairy_text"
+            />
+
+        <RelativeLayout android:id="@+id/location_area"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/dairy_text"
+            android:layout_alignParentLeft="true">
+
+            <TextView android:id="@+id/location_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:longClickable="false"
+                android:textColor="@color/location_text"
+                />
+
+            <TextView android:id="@+id/date_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/location_text"
+                android:layout_alignParentLeft="true"
+                android:textSize="10sp"
+                android:textColor="@color/date_text"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

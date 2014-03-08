@@ -1,0 +1,9 @@
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="app_background">#dbdbdb</color>
+    <color name="picture_item_background">@android:color/white</color>
+    <color name="actionbar_background">#6acccb</color>
+    <color name="dairy_text">#414141</color>
+    <color name="location_text">#24aca7</color>
+    <color name="date_text">#bababa</color>
+</resources>

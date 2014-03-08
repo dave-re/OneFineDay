@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OneFineDay</string>
+    <string name="actionbar_name">One<b>FineDay</b></string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_daily">DailyActivity</string>
+    <string name="action_edit">글쓰기</string>
+    <string name="action_sticker">스티커</string>
+    <string name="title_activity_write">WriteActivity</string>
+    <string name="enter_diary">이야기를 남겨주세요</string>
+    <string name="title_activity_sticker">StickerActivity</string>
+    <string name="action_save">저장</string>
+    <string name="preference_picture_info_key">com.toda.happyday.PREFERENCE_PICTURE_INFO_KEY</string>
+    <string name="preference_picture_to_location_key">com.toda.happyday.PREFERENCE_PICTURE_TO_LOCATION_KEY</string>
+    <string name="EXTRA_DAILY_GROUP_ID">dailyGroupId</string>
+    <string name="EXTRA_DAIRY_TEXT">DairyText</string>
+    <string name="EXTRA_PICTURE_GROUP_LIST">pictureGroupList</string>
+    <string name="title_activity_picture_list">PictureListActivity</string>
+    <string name="extra_daily_data_array">DailyDataArray</string>
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_happy_day">HappyDayActivity</string>
+    <string name="write">글쓰기</string>
+    <string name="EXTRA_LAST_LOAD_TIME">lastLoadTime</string>
+    <string name="EXTRA_IS_LOAD_COMPLETE">isLoadComplete</string>
+</resources>

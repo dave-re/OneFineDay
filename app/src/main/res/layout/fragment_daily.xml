@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:background="@color/app_background"
+    tools:context=".DailyActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/sticker_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:visibility="gone"
+            android:paddingTop="10dp"
+            android:background="@android:color/white"
+            />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:smoothScrollbar="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1">
+        </ListView>
+
+    </LinearLayout>
+</RelativeLayout>
