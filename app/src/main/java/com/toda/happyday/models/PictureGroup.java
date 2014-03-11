@@ -68,7 +68,7 @@ public class PictureGroup extends ArrayList<Picture> implements Parcelable {
             return 0;
         }
 
-        return random.nextInt(size - 1);
+        return random.nextInt(size);
     }
 
     public void changeProperties(PictureGroup pictureGroup) {

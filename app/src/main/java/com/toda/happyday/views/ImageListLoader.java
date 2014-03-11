@@ -25,6 +25,9 @@ public class ImageListLoader {
         final Bitmap bitmap = bitmapWorkerTask.getBitmapFromMemCache(cacheName + picture.getFilePath());
         if (bitmap != null) {
             imageView.setImageBitmap(bitmap);
+//            if (imageView.getAnimation() != null) {
+//                imageView.startAnimation(imageView.getAnimation());
+//            }
         } else {
             if (isCancelWork) {
                 final BitmapWorkerTask task = bitmapWorkerTask;

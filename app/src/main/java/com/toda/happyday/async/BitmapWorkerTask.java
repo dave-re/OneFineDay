@@ -9,10 +9,13 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.util.LruCache;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.path.android.jobqueue.JobManager;
+import com.toda.happyday.R;
 import com.toda.happyday.job.LocationJob;
 import com.toda.happyday.models.Picture;
 
@@ -94,6 +97,9 @@ abstract public class BitmapWorkerTask extends AsyncTask<String, Void, Bitmap> {
                     getBitmapWorkerTask(imageView);
             if (this == bitmapWorkerTask && imageView != null) {
                 imageView.setImageBitmap(bitmap);
+//                if (imageView.getAnimation() != null) {
+//                    imageView.startAnimation(imageView.getAnimation());
+//                }
             }
         }
     }

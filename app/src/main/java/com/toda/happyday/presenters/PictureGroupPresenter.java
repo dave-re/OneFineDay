@@ -32,7 +32,7 @@ public class PictureGroupPresenter {
     private boolean mIsDuplicateLoad = false;
 
     private final static long TAKEN_DATE_DIFF_MS = 1000 * 60 * 60; // 사진이 묶이는 시간 차이 - 1시간
-    private final static int PICTURE_LOAD_COUNT = 200;
+    private final static int PICTURE_LOAD_COUNT = 150;
 
     public PictureGroupPresenter(Context context) {
         mContext = context;

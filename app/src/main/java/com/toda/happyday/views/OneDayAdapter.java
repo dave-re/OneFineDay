@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -86,6 +88,10 @@ public class OneDayAdapter extends ArrayAdapter<Picture> {
             }
             viewHolder.pictureImageView.getLayoutParams().width = imageViewWidth;
             viewHolder.pictureImageView.getLayoutParams().height = (int)(ratio * (double)imageViewWidth);
+//            if (viewHolder.pictureImageView.getAnimation() == null) {
+//                Animation imageAppearAnim = AnimationUtils.loadAnimation(getContext(), R.anim.image_appear);
+//                viewHolder.pictureImageView.setAnimation(imageAppearAnim);
+//            }
         }
 
         if (picture.getType() == Picture.TYPE_IMAGE) {

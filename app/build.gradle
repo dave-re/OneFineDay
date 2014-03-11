@@ -25,5 +25,4 @@ dependencies {
     compile 'com.android.support:support-v4:19.0.1'
     compile 'com.path:android-priority-jobqueue:1.1.2'
     compile 'com.etsy.android.grid:library:1.0.4'
-
 }

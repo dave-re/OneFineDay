@@ -93,7 +93,7 @@ public class PictureGroupActivity extends Activity {
                 mLoadingBarView.setVisibility(View.GONE);
             } else {
                 mPictureGroupAdapter.addAll(loadedPictureGroups);
-                mPictureGroupAdapter.notifyDataSetChanged();
+//                mPictureGroupAdapter.notifyDataSetChanged();
             }
         }
     };
