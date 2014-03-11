@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.toda.happyday"
+    package="com.toda.onefineday"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -26,7 +26,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="com.toda.happyday.views.MainActivity"
+            android:name="com.toda.onefineday.views.MainActivity"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
             android:noHistory="true">
             <intent-filter>
@@ -36,17 +36,17 @@
         </activity>
 
         <activity
-            android:name="com.toda.happyday.views.PictureGroupActivity"
+            android:name="com.toda.onefineday.views.PictureGroupActivity"
             android:screenOrientation="portrait"
             android:label="@string/actionbar_name"
             android:theme="@style/HappyDayMainViewTheme" >
         </activity>
         <activity
-            android:name="com.toda.happyday.views.OneDayActivity"
+            android:name="com.toda.onefineday.views.OneDayActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.toda.happyday.views.WriteActivity"
+            android:name="com.toda.onefineday.views.WriteActivity"
             android:label="@string/write"
             android:screenOrientation="portrait" >
         </activity>
