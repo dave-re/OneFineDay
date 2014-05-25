@@ -25,12 +25,11 @@ public class OneDayBitmapWorkerTask extends BitmapWorkerTask {
             try {
                 metaRetriever.setDataSource(mPicture.getFilePath());
                 return metaRetriever.getFrameAtTime(0);
-            } catch(RuntimeException exception) {
+            } catch (RuntimeException exception) {
                 return null;
             } finally {
                 metaRetriever.release();
             }
         }
-
     }
 }

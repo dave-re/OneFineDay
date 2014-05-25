@@ -105,6 +105,9 @@ public class OneDayActivity extends FragmentActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()) {
+            case R.id.action_share:
+                moveToShareActivity();
+                return true;
             case R.id.action_sticker:
                 toggelStickerView();
                 return true;
@@ -114,6 +117,12 @@ public class OneDayActivity extends FragmentActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void moveToShareActivity() {
+        Intent intent = new Intent(this, MiniPicturesActivity.class);
+        intent.putExtra(getString(R.string.extra_daily_data_array), (Parcelable)this.placeholderFragment.getPictureGroup());
+        startActivity(intent);
     }
 
     private void toggelStickerView() {

@@ -30,13 +30,13 @@ public class OneDayAdapter extends ArrayAdapter<Picture> {
     private PictureGroup mPictureGroup;
 
     private int mWindowWidth = 0;
-    private int mWindowHeight = 0;
+//    private int mWindowHeight = 0;
 
-    private static Bitmap mLoadingBitmap;
+//    private static Bitmap mLoadingBitmap;
     private static ImageListLoader mImageListLoader;
 
     public OneDayAdapter(Activity activity, PictureGroup pictureGroup, ImageListLoader imageListLoader) {
-        super(activity, R.layout.picture_group_item, pictureGroup);
+        super(activity, R.layout.picture_item, pictureGroup);
 
         mActivity = activity;
         mPictureGroup = pictureGroup;
@@ -45,10 +45,10 @@ public class OneDayAdapter extends ArrayAdapter<Picture> {
         ((WindowManager)getContext().getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(metrics);
 
         mWindowWidth = metrics.widthPixels;
-        mWindowHeight = metrics.heightPixels;
+//        mWindowHeight = metrics.heightPixels;
 
         mImageListLoader = imageListLoader;
-        mLoadingBitmap = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.loading);
+//        mLoadingBitmap = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.loading);
     }
 
     @Override
@@ -70,18 +70,19 @@ public class OneDayAdapter extends ArrayAdapter<Picture> {
         }
 
         Picture picture = mPictureGroup.get(position);
-
         TextViewUtil.setText(viewHolder.timeTextView, picture.getTimeText());
+
+        double ratio = 1;
+        if (picture.getDegrees() == 0 || picture.getDegrees() == 180) {
+            ratio = (double)picture.getHeight() / (double)picture.getWidth();
+        } else if (picture.getDegrees() == 90 || picture.getDegrees() == 270) {
+            ratio = (double)picture.getWidth() / (double)picture.getHeight();
+        }
 
         final int imageViewWidth = mWindowWidth;
 
         {
-            double ratio = 1;
-            if (picture.getDegrees() == 0 || picture.getDegrees() == 180) {
-                ratio = (double)picture.getHeight() / (double)picture.getWidth();
-            } else if (picture.getDegrees() == 90 || picture.getDegrees() == 270) {
-                ratio = (double)picture.getWidth() / (double)picture.getHeight();
-            }
+
             viewHolder.pictureImageView.getLayoutParams().width = imageViewWidth;
             viewHolder.pictureImageView.getLayoutParams().height = (int)(ratio * (double)imageViewWidth);
 //            if (viewHolder.pictureImageView.getAnimation() == null) {

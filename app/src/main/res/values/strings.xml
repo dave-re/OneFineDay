@@ -26,4 +26,8 @@
     <string name="write">글쓰기</string>
     <string name="EXTRA_LAST_LOAD_TIME">lastLoadTime</string>
     <string name="EXTRA_IS_LOAD_COMPLETE">isLoadComplete</string>
+    <string name="title_activity_share_pictures">SharePictures</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_share">공유</string>
+
 </resources>
